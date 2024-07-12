@@ -18,7 +18,7 @@ And toggle it to use backticks
 `Hello from the ${otherside}`;
 ```
 
-\!\[Demo of using the extension\]\(images/demo.gif\)
+![Demo of using the extension](image/demo.gif)
 
 The extension provides commands to overwrite using the following wrapping symbols:
 
