@@ -1,0 +1,71 @@
+{
+  "name": "overwrap",
+  "displayName": "Overwrap",
+  "description": "An extension to overwrite the wrapping symbols of some selected text. Has your selected text got double quotes but you need backticks? Overwrap can help.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.wrapWithDoubleQuotes",
+        "title": "Overwrap: Wrap with double quotes"
+      },
+      {
+        "command": "extension.wrapWithSingleQuotes",
+        "title": "Overwrap: Wrap with single quotes"
+      },
+      {
+        "command": "extension.wrapWithParens",
+        "title": "Overwrap: Wrap with parentheses"
+      },
+      {
+        "command": "extension.wrapWithSquareBrackets",
+        "title": "Overwrap: Wrap with square brackets"
+      },
+      {
+        "command": "extension.wrapWithCurlyBraces",
+        "title": "Overwrap: Wrap with curly braces"
+      },
+      {
+        "command": "extension.wrapWithBackticks",
+        "title": "Overwrap: Wrap with backticks"
+      }
+    ],
+    "configuration": {
+      "title": "Overwrap",
+      "properties": {
+        "overwrap.trimWhitespace": {
+          "type": "boolean",
+          "default": false,
+          "description": "Trim any whitespace from the selected text before wrapping it. May cause formatting issues if you aren't using a linter."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.91.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
