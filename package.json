@@ -2,7 +2,7 @@
 	"name": "overwrap",
 	"displayName": "Overwrap",
 	"publisher": "blackhaj",
-	"description": "An extension to overwrite the wrapping symbols of some selected text. Has your selected text got double quotes but you need backticks? Overwrap can help.",
+	"description": "An extension to overwrite the wrapping symbols of selected text. Has your selected text got double quotes but you need backticks? Overwrap can help.",
 	"version": "1.0.1",
 	"icon": "image/overwrapped-icon.png",
 	"engines": {

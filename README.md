@@ -1,6 +1,6 @@
 # Overwrap
 
-An extension to overwrite the wrapping symbols of some selected text. Has your selected text got double quotes but you need backticks? Overwrap can help.
+An extension to overwrite the wrapping symbols of selected text. Has your selected text got double quotes but you need backticks? Overwrap can help.
 
 ## Features
 
@@ -9,7 +9,7 @@ Allows you to highlight some text and overwrite the wrapping symbols.
 For example, you could highlight the following text which uses double quotes:
 
 ```js
-'Hello from the ${otherside}';
+"Hello from the ${otherside}";
 ```
 
 And toggle it to use backticks
